@@ -7,9 +7,8 @@ openModal.addEventListener('click', function () {
 });
 
 for (let btn of closeBtn) {
-  btn.addEventListener('click', function (e) {
+  btn.addEventListener('click', function () {
     modalContainer.style.display = 'none';
-    console.log(e);
   });
 }
 
@@ -23,5 +22,4 @@ document.addEventListener('click', function (e) {
   if (e.target.tagName === 'HTML') {
     modalContainer.style.display = 'none';
   }
-  console.log(e);
 });
